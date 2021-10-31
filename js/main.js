@@ -4,3 +4,13 @@
 - A függvény neve `generateList` legyen!
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
+
+const content = ['első', 'második', 'harmadik'];
+
+let list = document.getElementById("list");
+
+content.forEach((item) => {
+    let li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+});
